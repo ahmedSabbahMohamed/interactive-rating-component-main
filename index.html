@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-star.svg">
+  <title>Ahmed Sabbah | Interactive rating component</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="./dist/output.css">
+
+</head>
+<body class="grid place-items-center min-h-screen bg-vdBlue font-font">
+
+  <main class="max-w-sm p-4 m-4 bg-dBlue rounded-xl">
+      <!-- Rating state start -->
+
+    <section class="rating">
+      <div class="grid place-items-center w-12 h-12 rounded-full bg-mdGray">
+        <img src="./images/icon-star.svg" alt="star">
+      </div>
+      <h1 class="text-3xl my-4 text-white font-bold">How did we do?</h1>
+      <p class="my-4 text-lGray">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="rate-btn flex justify-between my-4">
+        <button value="1" class="bg-mdGray w-12 h-12 text-lGray rounded-full">1</button>
+        <button value="2" class="bg-mdGray w-12 h-12 text-lGray rounded-full">2</button>
+        <button value="3" class="bg-mdGray w-12 h-12 text-lGray rounded-full">3</button>
+        <button value="4" class="bg-mdGray w-12 h-12 text-lGray rounded-full">4</button>
+        <button value="5" class="bg-mdGray w-12 h-12 text-lGray rounded-full">5</button>
+      </div>
+      <button class="submit mt-4 w-full rounded-full bg-primary text-white p-3 hover:bg-white hover:text-primary">Submit</button>
+    </section>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+    <section class="Thank hidden">
+      <div class="grid place-items-center my-4">
+        <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+      </div>
+      <div class="bg-mdGray rounded-full p-2 my-4 text-center text-primary">
+        <p>You selected <span class="selected-rate">Null</span> out of 5</p>
+      </div>
+      <h1 class="text-3xl text-center text-white font-bold">Thank you!</h1>
+      <p class="my-4 text-center text-lGray">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </section>
+
+  <!-- Thank you state end -->
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
